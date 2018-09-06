@@ -9,7 +9,6 @@ export default class LearnMore extends Component {
   render() {
     return (
     <div>
-    <style>{'body { background-color: green; }'}</style>
 <Panel bsStyle="primary">
   <Panel.Heading>
     <Panel.Title componentClass="h3">EXTRA 1</Panel.Title>

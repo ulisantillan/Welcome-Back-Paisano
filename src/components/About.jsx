@@ -7,7 +7,6 @@ export default class Home extends Component {
   render() {
     return (
       <Grid>
-      <style>{'body { background-color: lightblue; }'}</style>
         <Row className="show-grid text-center">
           <Col sm={6} md={3} className="person-wrapper">
             <Image src="assets/uli.jpg" circle className="profile-pic"/>

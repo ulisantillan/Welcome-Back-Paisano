@@ -6,7 +6,6 @@ export default class News extends Component {
   render() {
     return (
       <div>
-      <style>{'body { background-color: lightblue; }'}</style>
         <Image src="assets/rights.jpg" className="header-image" />
         <Grid>
           <h2>News</h2>

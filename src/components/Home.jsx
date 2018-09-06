@@ -10,7 +10,6 @@ export default class About extends Component {
   render() {
     return (
       <div>
-      <style>{'body { background-color: gold; }'}</style>
         <Grid>
         <Jumbotron>
           <h2>Welcome Home</h2>
