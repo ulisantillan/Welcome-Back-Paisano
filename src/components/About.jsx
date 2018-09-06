@@ -27,7 +27,7 @@ export default class Home extends Component {
             <p>Lets SEE wht moi HAS to say</p>
           </Col>
           <Col sm={6} md={3} className="person-wrapper">
-            <Image src="assets/defpic.jpg" circle className="profile-pic"/>
+            <Image src="assets/brian.jpg" circle className="profile-pic"/>
             <h3>Brian</h3>
             <p>about brian </p>
           </Col>
