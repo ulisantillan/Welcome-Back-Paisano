@@ -2,7 +2,7 @@ DROP DATABASE IF EXISTS sources;
 
 CREATE DATABASE sources;
 
-USE sources;
+ USE sources;
 
 CREATE TABLE resources (
   id int NOT NULL AUTO_INCREMENT,
