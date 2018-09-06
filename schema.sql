@@ -22,17 +22,17 @@ INSERT INTO resources (logo, name, description, url) VALUES ("eOrVbSw", "CDMX se
 
 
 CREATE TABLE teamMembers (
-  id in NOT NULL AUTO_INCREMENT,
-  photo varchar(100) NOT NULL,
+  id int NOT NULL AUTO_INCREMENT,
+  photo varchar(50) NOT NULL,
   name varchar(50) NOT NULL,
   about varchar(200) NOT NULL,
   PRIMARY KEY (ID)
 );
 
-INSERT INTO teamMembers (photo, name, about) VALUES ("pRNzIJa", "Ulises Santillan", "Born in Jalisco, grew up in North Carolina; you're not alone, I am here to help")
-INSERT INTO teamMembers (photo, name, about) VALUES ("IkMy1NN", "Moises Santamaria", "I was born in Morelita, Guerrero: I lived in Santa Barbra for 28 years. I only have a year here in Mexico City and wish I had all this info in this app")
-INSERT INTO teamMembers (photo, name, about) VALUES ("tY9vzt1", "Fernando Figueroa", "As an immigrant myself; I understand the struggles, I am here to help")
-INSERT INTO teamMembers (photo, name, about) VALUES ("4kErWao", "Brian Ramirez", "Born in Mexico City grew up in Atlanta GA Hola-code engineer glad to help")
+INSERT INTO teamMembers (photo, name, about) VALUES ("pRNzIJa", "Ulises Santillan", "Born in Jalisco, grew up in North Carolina; you're not alone, I am here to help");
+INSERT INTO teamMembers (photo, name, about) VALUES ("IkMy1NN", "Moises Santamaria", "I was born in Morelita, Guerrero: I lived in Santa Barbra for 28 years. I only have a year here in Mexico City and wish I had all this info in this app");
+INSERT INTO teamMembers (photo, name, about) VALUES ("tY9vzt1", "Fernando Figueroa", "As an immigrant myself; I understand the struggles, I am here to help");
+INSERT INTO teamMembers (photo, name, about) VALUES ("4kErWao", "Brian Ramirez", "Born in Mexico City grew up in Atlanta GA Hola-code engineer glad to help");
 
 
 
