@@ -16,6 +16,26 @@ var app = express();
 		});
 	});
 
+	app.get('/resources', function(req, res){
+		database.displayResources(function(err, data){
+			if(err){
+				res.sendStatus(500);
+			}else{
+				res.json(data);
+			}
+		});
+	});
+
+	app.get('/about', function(req,res){
+		database.displayTeamMembers(function(err, data){
+			if(err){
+				res.sendStatus(500);
+			}else{
+				res.json(data);
+			}
+		});
+	});
+	
 	app.listen(3000, function() {
   console.log('listening on port 3000!');
 });
