@@ -32,11 +32,11 @@ var displayResources = function(callback, logo, name, description, url) {
   );
 };
 
-var displayTeamMembers = function(callback, logo, name, about) {
+var displayTeamMembers = function(callback, photo, name, about) {
   connection.query(
-    "SELECT FROM teamMembers",
+    "SELECT * FROM teamMembers",
     [photo, name, about],
-    (err, results) => {
+    (err, results, fields) => {
       if(err) {
       callback(err, null);
     }else{

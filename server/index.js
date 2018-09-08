@@ -18,14 +18,11 @@ var app = express();
 	});
 
 	app.get('/resources', function(req, res){
-		console.log('this is the resources ');
+
 		database.displayResources(function(err, data){
 			if(err){
-				console.log('ERROR HERE');
-				console.log(err)
 				res.sendStatus(500);
 			}else{
-				console.log('RESULTS HERE');
 				res.json(data);
 			}
 		});
