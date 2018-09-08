@@ -4,7 +4,8 @@ var database = require('../database/index.js')
 
 var app = express();
 
-	app.use(express.static(__dirname + '/../client/dist'));
+	console.log("dirname ", __dirname + '/public')
+	app.use(express.static(__dirname + '/../public'));
 
 	app.get('/sources', function(req, res){
 		database.selectAll(function(err, data){
@@ -17,10 +18,14 @@ var app = express();
 	});
 
 	app.get('/resources', function(req, res){
+		console.log('this is the resources ');
 		database.displayResources(function(err, data){
 			if(err){
+				console.log('ERROR HERE');
+				console.log(err)
 				res.sendStatus(500);
 			}else{
+				console.log('RESULTS HERE');
 				res.json(data);
 			}
 		});
@@ -35,7 +40,7 @@ var app = express();
 			}
 		});
 	});
-	
+
 	app.listen(3000, function() {
   console.log('listening on port 3000!');
 });
