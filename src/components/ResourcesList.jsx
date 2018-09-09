@@ -1,12 +1,8 @@
 import React from "react";
 import ResourceItem from "./ResourceItem.jsx";
-import { Jumbotron, Grid, Row, Col, Image, Button } from "react-bootstrap";
+import {Grid, Row, Col, Image} from "react-bootstrap";
 
-const ResourcesList = props => (
-	<Col>
-		{props.resources.map((resource, index) => (
-			<ResourceItem resource={resource} index={index} />
-		))}
-	</Col>
-);
+const ResourcesList = props => (<Col>
+  {props.resources.map((resource, index) => (<ResourceItem resource={resource} index={resource.id}/>))}
+</Col>);
 export default ResourcesList;
