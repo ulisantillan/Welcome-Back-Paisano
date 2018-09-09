@@ -17,9 +17,9 @@ var selectAll = function(callback) {
   });
 };
 
-var displayResources = function(logo, name, description, url, function) {
+var displayResources = function(callback, logo, name, description, url) {
   connection.query(
-    "SELECT FROM resources(logo, name, description, url) VALUES (?, ?, ?, ?)",
+    "SELECT * FROM resources;",
     [logo, name, description, url],
     (err,results, fields) => {
       if(err) {
@@ -32,9 +32,9 @@ var displayResources = function(logo, name, description, url, function) {
   );
 };
 
-var displayTeamMembers = function(callback) {
+var displayTeamMembers = function(callback, logo, name, about) {
   connection.query(
-    "SELECT FROM teamMembers(photo, name, about) VALUES(?, ?, ?)",
+    "SELECT FROM teamMembers",
     [photo, name, about],
     (err, results) => {
       if(err) {
