@@ -11,8 +11,8 @@ import Footer from './components/Footer';
 
 
 class App extends React.Component {
+
   render() {
-<<<<<<< HEAD
     return (
       <Router>
         <div>
@@ -26,18 +26,6 @@ class App extends React.Component {
         </div>
       </Router>
     );
-=======
-    return (<Router>
-      <div>
-        <Navbar/>
-        <Route exact="exact" path="/" component={Home}/>
-        <Route path="/about" component={About}/>
-        <Route path="/news" component={News}/>
-        <Route path="/resources" component={Resources}/>
-        <Route path="/learnMore" component={LearnMore}/>
-      </div>
-    </Router>);
->>>>>>> master
   }
 }
 
