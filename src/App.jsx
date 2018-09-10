@@ -7,7 +7,7 @@ import News from './components/News';
 import Resources from './components/Resources';
 import LearnMore from './components/LearnMore';
 import Navbar from './components/CustomNavbar';
-//import Footer from './components/Footer';
+import Footer from './components/Footer';
 
 
 class App extends React.Component {
@@ -21,6 +21,7 @@ class App extends React.Component {
           <Route path="/news" component={News} />
           <Route path="/resources" component={Resources} />
           <Route path="/learnMore" component={LearnMore} />
+          <Footer />
         </div>
       </Router>
     );
