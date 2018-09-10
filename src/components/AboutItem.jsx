@@ -4,7 +4,7 @@ import {Grid, Row, Col, Image} from "react-bootstrap";
 const AboutItem = props => (<Grid>
   <Row>
     <Col sm={6} md={3} className="person-wrapper">
-      <Image src={`http://imgr.com/${props.teamMember.photo}`} circle="circle" className="profile-pic"/>
+      <Image src={`https://imgur.com/${props.teamMember.photo}`} circle="circle" className="profile-pic"/>
       <p>
         {`${props.teamMember.name}`}
         <br/>
